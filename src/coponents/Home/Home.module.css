@@ -1,0 +1,65 @@
+.page{
+    height: 200vh;
+    background-color: rgb(19, 19, 19);
+}
+
+.content{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 4%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)),url('./../../assets/84248.png');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+.section{
+  
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: auto;
+    
+}
+
+.boxLeft, .boxRigth{
+    width: 50%;
+   color: white;
+
+   height: 100%;
+ 
+}
+.boxLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxRigth{
+    padding-top: 10%;
+}
+.imageR{
+    background-image: url('../../assets/o.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+ margin-top: 1%;
+ background-size: contain;
+}
+.card{
+    margin: auto;
+   
+}
+
+.cardButtons{
+ 
+
+    text-align: center;
+}
+
+.btn{
+    background-color: rgba(198, 198, 198, 0.782);
+    
+}
+
+
+
