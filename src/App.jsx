@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-
-    <Nav/>
+{/* 
+    <Nav/> */}
 <BrowserRouter>
 <Routes>
         <Route path="/" element={<Home />} />

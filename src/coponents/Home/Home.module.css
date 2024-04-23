@@ -1,7 +1,8 @@
 .page{
-    height: 200vh;
+    height: 220vh;
     background-color: rgb(19, 19, 19);
 }
+
 
 .content{
     height: 100vh;
@@ -15,13 +16,13 @@
 .section{
   
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
     margin: auto;
     
 }
 
-.boxLeft, .boxRigth{
+.boxLeft{
     width: 50%;
    color: white;
 
@@ -34,8 +35,20 @@
     align-items: center;
 }
 
+.cards{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .boxRigth{
+    width: 30%;
     padding-top: 10%;
+    height: 100%;
+    background-position: bottom;
 }
 .imageR{
     background-image: url('../../assets/o.png');
@@ -45,7 +58,7 @@
  margin-top: 1%;
  background-size: contain;
 }
-.card{
+.cardBox{
     margin: auto;
    
 }
@@ -60,6 +73,72 @@
     background-color: rgba(198, 198, 198, 0.782);
     
 }
+.title{
+    width: 100%;
+    color:white;
+    text-align: center;
+    height: 5vh;
+    margin-top: 2%;
+}
+.imageCard{
+    height: 40vh;
+    background-image: url('../../assets/landingW.jpeg');
+    background-color: paleturquoise;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.imageCard2{
+    height: 40vh;
+    background-image: url('../../assets/landingD.jpeg');
+    background-color: paleturquoise;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.projectCard{
+    background-color: rgba(128, 128, 128, 0.542);
+    width: 48%;
+    border-radius: 5px;
+}
+
+.bodyCard{
+ width: 100%;
+ padding: 2%;
+ color: white;
+}
 
 
-
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footerContent {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .socialIcons {
+    margin-top: 10px;
+  }
+  
+  .socialIcons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .socialIcons a:hover {
+    color: #ccc;
+  }
+  
