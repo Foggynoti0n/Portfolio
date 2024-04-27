@@ -1,6 +1,7 @@
 .page{
     height: 220vh;
     background-color: rgb(19, 19, 19);
+
 }
 
 
@@ -12,6 +13,7 @@
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+
 }
 .section{
   
@@ -45,18 +47,18 @@
 }
 
 .boxRigth{
-    width: 30%;
+    width: 35%;
     padding-top: 10%;
     height: 100%;
-    background-position: bottom;
+    
 }
 .imageR{
     background-image: url('../../assets/o.png');
     height: 100%;
     background-repeat: no-repeat;
     width: 100%;
- margin-top: 1%;
- background-size: contain;
+ 
+ background-size: cover;
 }
 .cardBox{
     margin: auto;
@@ -142,5 +144,10 @@
   
   .socialIcons a:hover {
     color: #ccc;
+  }
+  
+  p ul li{
+    list-style-type: none;
+    width: 70px;
   }
   

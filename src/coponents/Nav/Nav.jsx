@@ -30,7 +30,7 @@ function Nav() {
       <div className={style.boxList}>
         <ul>
       
-            <li>Products</li>
+            <li>Projects</li>
             <li>About</li>
             <li>Contact</li>
      
