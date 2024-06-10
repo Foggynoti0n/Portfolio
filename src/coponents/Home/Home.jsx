@@ -61,7 +61,9 @@ function Home() {
               </div>
 </div>
             </div>
-          <div className={style.title}>
+        </div>
+        <div className={style.page2}>
+        <div className={style.title}>
           <h2>Mis proyectos</h2>
           <p>En cada uno de los proyectos llevados a cabo, pude pulir mis habilidades tech y aprender acerca del trabajo en equipo</p>
           </div>
@@ -74,8 +76,7 @@ function Home() {
 <div className={style.bodyCard}>
 <div className="card-body">
     <h5 className="card-title">Wearfashion</h5>
-    <p className="card-text">Este ecommerce es un destino de moda urbana que ofrece una amplia selección de ropa, calzado y accesorios para aquellos que buscan un estilo moderno y urbano. Desde camisetas gráficas hasta zapatillas de deporte de moda, la tienda en línea presenta productos de marcas populares y diseñadores emergentes. La interfaz de usuario es fácil de navegar, con opciones de búsqueda avanzada y filtros para ayudar a los clientes a encontrar exactamente lo que están buscando.</p>
-    <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
   </div>
 </div>
 </div>
@@ -88,10 +89,21 @@ function Home() {
 <div className={style.bodyCard}>
 <div className="card-body">
     <h5 className="card-title">Paws</h5>
-    <p className="card-text">
+    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+  
+</div>
 
-Esta página es un refugio digital para perros que buscan un hogar amoroso. Ofrece una plataforma intuitiva donde los usuarios pueden navegar a través de perfiles detallados de perros en busca de adopción. Los usuarios pueden filtrar la búsqueda según sus preferencias, como tamaño, edad y nivel de actividad. Además, la página proporciona información sobre el proceso de adopción, consejos de cuidado de mascotas y recursos útiles para los nuevos dueños de perros.</p>
-    <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+<div  className={style.projectCard}>
+  <Link to='https://alk-software.vercel.app/' >
+  <div src="..." className={style.imageCard3} alt="...">  </div>
+  </Link>
+
+<div className={style.bodyCard}>
+<div className="card-body">
+    <h5 className="card-title">ALK Software</h5>
+    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
   </div>
 </div>
   
