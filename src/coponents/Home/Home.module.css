@@ -93,11 +93,14 @@
   
   .imageCard,
   .imageCard2, .imageCard3 {
-    height: 50vh;
+    height: 60vh;
+    width: 60%;
+   margin: auto;
     background-color: paleturquoise;
     background-size: cover;
     border-radius: 5px 5px 0 0;
     transition: background-position 0.5s;
+    margin-bottom: 2%;
   }
   
   .imageCard {
@@ -111,37 +114,51 @@
     background-image: url('../../assets/ALK.jpeg');
   }
   .projectCard {
-    background-color: rgba(128, 128, 128, 0.542);
-    width: 60vw;
-    height: 60vh;
+    background-color: #333;
+    width: 100vw;
+    height: 80vh;
     border-radius: 5px;
     transition: transform 0.5s;
-  
+
     margin: auto;
     
     
   }
   
   .projectCard:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
-
-  .carousel {
+  .carouselContainer {
+    position: relative; /* Para usar como referencia de posición */
     margin-top: 5%; /* Margen superior para separar del contenido anterior */
   }
   
-  .carousel-item {
-    text-align: center; /* Centra el contenido del carousel */
+  .carousel {
+    margin-bottom: 20px; /* Espacio entre el carousel y el siguiente contenido */
   }
   
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute; /* Posiciona las flechas absolutamente dentro del contenedor */
+    top: 50%; /* Alinea verticalmente al centro */
+    transform: translateY(-50%); /* Ajusta posición vertical */
     width: auto;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los controles */
     border-radius: 50%;
     padding: 0px;
+    z-index: 10; /* Asegura que esté por encima del contenido del carousel */
   }
   
-  .carousel-control-prev-icon, .carousel-control-next-icon {
+  .carousel-control-prev {
+    left: 20px; /* Ajusta posición a la izquierda */
+  }
+  
+  .carousel-control-next {
+    right: 20px; /* Ajusta posición a la derecha */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     filter: invert(100%); /* Invierte el color del ícono para mejor visibilidad */
   }
   
@@ -161,9 +178,11 @@
   
   
   .bodyCard {
-    width: 100%;
+    width: 60%;
     padding: 2%;
     color: white;
+    margin: auto;
+    height: 15%;
   }
   
   

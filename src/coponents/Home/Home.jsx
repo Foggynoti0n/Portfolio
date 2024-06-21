@@ -70,22 +70,21 @@ function Home() {
         <p>En cada uno de los proyectos llevados a cabo, pude pulir mis habilidades tech y aprender acerca del trabajo en equipo</p>
       </div>
       <div className={style.cards}>
-      <Carousel>
-        <Carousel.Item>
-          <a href="https://wearfashion.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div className={style.carouselContainer}>
+        <Carousel className={style.carousel}>
+          <Carousel.Item>
             <div className={style.projectCard}>
-              <div className={style.imageCard}></div>
-              <div className={style.bodyCard}>
+            <div className={style.bodyCard}>
                 <div className="card-body">
                   <h5 className="card-title">Wearfashion</h5>
                   <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
                 </div>
               </div>
+              <div className={style.imageCard}></div>
+
             </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a href="https://github.com/Foggynoti0n/Dogs" target="_blank" rel="noopener noreferrer">
+          </Carousel.Item>
+          <Carousel.Item>
             <div className={style.projectCard}>
               <div className={style.imageCard2}></div>
               <div className={style.bodyCard}>
@@ -95,10 +94,8 @@ function Home() {
                 </div>
               </div>
             </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a href="https://alk-software.vercel.app/" target="_blank" rel="noopener noreferrer">
+          </Carousel.Item>
+          <Carousel.Item>
             <div className={style.projectCard}>
               <div className={style.imageCard3}></div>
               <div className={style.bodyCard}>
@@ -108,9 +105,9 @@ function Home() {
                 </div>
               </div>
             </div>
-          </a>
-        </Carousel.Item>
-      </Carousel>
+          </Carousel.Item>
+        </Carousel>
+      </div>
       </div>
     </div>
 
