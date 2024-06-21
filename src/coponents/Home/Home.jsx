@@ -1,6 +1,8 @@
 import style from './Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-bootstrap';
+
 
 
 function Home() {
@@ -63,55 +65,54 @@ function Home() {
             </div>
         </div>
         <div className={style.page2}>
-        <div className={style.title}>
-          <h2>Mis proyectos</h2>
-          <p>En cada uno de los proyectos llevados a cabo, pude pulir mis habilidades tech y aprender acerca del trabajo en equipo</p>
-          </div>
-          <div className={style.cards}>
-
-<div className={style.projectCard}>
-<Link to='https://wearfashion.vercel.app/'>
-<div src="..." className={style.imageCard} alt="..."> </div>
-</Link>
-<div className={style.bodyCard}>
-<div className="card-body">
-    <h5 className="card-title">Wearfashion</h5>
-    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
-  </div>
-</div>
-</div>
-
-<div  className={style.projectCard}>
-  <Link to='https://github.com/Foggynoti0n/Dogs' >
-  <div src="..." className={style.imageCard2} alt="..."> </div>
-  </Link>
-
-<div className={style.bodyCard}>
-<div className="card-body">
-    <h5 className="card-title">Paws</h5>
-    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
-  </div>
-</div>
-  
-</div>
-
-<div  className={style.projectCard}>
-  <Link to='https://alk-software.vercel.app/' >
-  <div src="..." className={style.imageCard3} alt="...">  </div>
-  </Link>
-
-<div className={style.bodyCard}>
-<div className="card-body">
-    <h5 className="card-title">ALK Software</h5>
-    <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
-  </div>
-</div>
-  
-</div>
-
-
-          </div>
-        </div>
+      <div className={style.title}>
+        <h2>Mis proyectos</h2>
+        <p>En cada uno de los proyectos llevados a cabo, pude pulir mis habilidades tech y aprender acerca del trabajo en equipo</p>
+      </div>
+      <div className={style.cards}>
+      <Carousel>
+        <Carousel.Item>
+          <a href="https://wearfashion.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <div className={style.projectCard}>
+              <div className={style.imageCard}></div>
+              <div className={style.bodyCard}>
+                <div className="card-body">
+                  <h5 className="card-title">Wearfashion</h5>
+                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://github.com/Foggynoti0n/Dogs" target="_blank" rel="noopener noreferrer">
+            <div className={style.projectCard}>
+              <div className={style.imageCard2}></div>
+              <div className={style.bodyCard}>
+                <div className="card-body">
+                  <h5 className="card-title">Paws</h5>
+                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://alk-software.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <div className={style.projectCard}>
+              <div className={style.imageCard3}></div>
+              <div className={style.bodyCard}>
+                <div className="card-body">
+                  <h5 className="card-title">ALK Software</h5>
+                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Carousel.Item>
+      </Carousel>
+      </div>
+    </div>
 
         <footer className={style.footer}>
       <div className={style.footerContent}>
