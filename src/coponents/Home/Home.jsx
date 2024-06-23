@@ -77,7 +77,7 @@ function Home() {
             <div className={style.bodyCard}>
                 <div className="card-body">
                   <h5 className="card-title">Wearfashion</h5>
-                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+                  <p className="card-text"><small className="text-body-light">Ecommerce de ropa urbana</small></p>
                 </div>
               </div>
               <Link to={'https://wearfashion.vercel.app/'}> <div className={style.imageCard}></div></Link>
