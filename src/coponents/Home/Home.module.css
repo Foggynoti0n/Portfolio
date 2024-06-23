@@ -1,362 +1,394 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+
+
 .page {
-    height: 100vh;
-    background-color: rgb(19, 19, 19);
+  height: calc(100vh ); /* Ajusta la altura de .page para ocupar toda la pantalla menos la altura del navBar */
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  display: flex;
+
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.page2 {
+  min-height: 150vh;
+  height: auto;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)), url('./../../assets/84248.png');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  transition: background-position 0.5s;
+}
+
+.cardp h1 {
+  font-size: 4vw;
+  margin-bottom: 5%;
+}
+
+.section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.boxLeft {
+  width: 50%;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxRigth {
+  width: 35%;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.imageR {
+  background-image: url('../../assets/o.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.cardBox {
+  margin: auto;
+  transition: transform 0.5s;
+}
+
+.cardBox:hover {
+  transform: scale(1.05);
+}
+
+.cardButtons {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(198, 198, 198, 0.782);
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(198, 198, 198, 0.9);
+  transform: scale(1.05);
+}
+
+.title {
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 5vh;
+  margin-top: 4%;
+}
+
+.imageCard,
+.imageCard2,
+.imageCard3 {
+  height: 60vh;
+  width: 60%;
+  margin: auto;
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  transition: background-position 0.5s;
+  margin-bottom: 2%;
+}
+
+.imageCard {
+  background-image: url('../../assets/landingW.jpeg');
+}
+
+.imageCard2 {
+  background-image: url('../../assets/landingD.jpeg');
+}
+
+.imageCard3 {
+  background-image: url('../../assets/ALK.jpeg');
+}
+
+.projectCard {
+  background-color: #333;
+  width: 90vw;
+  height: 80vh;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  margin: auto;
+}
+
+.projectCard:hover {
+  transform: scale(1.03);
+}
+
+.carouselContainer {
+  position: relative;
+  margin-top: 5%;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 0px;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+.carousel-indicators .active {
+  background-color: #333;
+  border-color: #333;
+}
+
+.bodyCard {
+  width: 60%;
+  padding: 2%;
+  color: white;
+  margin: auto;
+  height: 15%;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerContent {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.socialIcons {
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.socialIcons a:hover {
+  color: #ccc;
+  transform: scale(1.2);
+}
+
+p ul li {
+  list-style-type: none;
+  width: 70px;
+}
+
+/* Responsive styles for different widths */
+@media (max-width: 1200px) {
+  .footerContent {
+    padding: 0 20px;
   }
 
-  .page2{
-    height: 150vh;
+  .socialIcons a {
+    font-size: 22px;
   }
+}
 
-  
-  .content {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 4%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)), url('./../../assets/84248.png');
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    transition: background-position 0.5s;
+@media (max-width: 992px) {
+  .socialIcons a {
+    font-size: 20px;
+    margin: 0 5px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .socialIcons a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .socialIcons a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
   .section {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
+    width: 90%;
+    height: 100vh;
   }
-  
-  .boxLeft {
-    width: 50%;
-    color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-  }
-  
+
   .cards {
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 90%;
   }
-  
+
+  .projectCard {
+    width: 48%;
+    height: auto;
+  }
+
   .boxRigth {
-    width: 35%;
-    padding-top: 10%;
-    height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
   }
-  
+
   .imageR {
     background-image: url('../../assets/o.png');
-    height: 100%;
+    height: 80%;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-position: bottom;
   }
-  
-  .cardBox {
-    margin: auto;
-    transition: transform 0.5s;
+}
+
+@media (max-width: 992px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
   }
-  
-  .cardBox:hover {
-    transform: scale(1.05);
+
+  .boxLeft,
+  .boxRigth {
+    width: 50%;
+    padding-top: 5%;
   }
-  
-  .cardButtons {
-    text-align: center;
-  }
-  
-  .btn {
-    background-color: rgba(198, 198, 198, 0.782);
-    transition: background-color 0.5s, transform 0.5s;
-  }
-  
-  .btn:hover {
-    background-color: rgba(198, 198, 198, 0.9);
-    transform: scale(1.05);
-  }
-  
-  .title {
+
+  .cards {
     width: 100%;
-    color: white;
-    text-align: center;
-    height: 10vh;
-    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .imageCard,
-  .imageCard2, .imageCard3 {
-    height: 60vh;
-    width: 60%;
-   margin: auto;
-    background-color: paleturquoise;
-    background-size: cover;
-    border-radius: 5px 5px 0 0;
-    transition: background-position 0.5s;
-    margin-bottom: 2%;
-  }
-  
-  .imageCard {
-    background-image: url('../../assets/landingW.jpeg');
-  }
-  
-  .imageCard2 {
-    background-image: url('../../assets/landingD.jpeg');
-  }
-  .imageCard3 {
-    background-image: url('../../assets/ALK.jpeg');
-  }
+
   .projectCard {
-    background-color: #333;
     width: 100vw;
-    height: 80vh;
-    border-radius: 5px;
-    transition: transform 0.5s;
+    margin-bottom: 20px;
+    height: auto;
+  }
+}
 
-    margin: auto;
-    
-    
+@media (max-width: 768px) {
+  .content {
+    padding-top: 2%;
   }
-  
-  .projectCard:hover {
-    transform: scale(1.03);
-  }
-  .carouselContainer {
-    position: relative; /* Para usar como referencia de posición */
-    margin-top: 5%; /* Margen superior para separar del contenido anterior */
-  }
-  
-  .carousel {
-    margin-bottom: 20px; /* Espacio entre el carousel y el siguiente contenido */
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute; /* Posiciona las flechas absolutamente dentro del contenedor */
-    top: 50%; /* Alinea verticalmente al centro */
-    transform: translateY(-50%); /* Ajusta posición vertical */
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los controles */
-    border-radius: 50%;
-    padding: 0px;
-    z-index: 10; /* Asegura que esté por encima del contenido del carousel */
-  }
-  
-  .carousel-control-prev {
-    left: 20px; /* Ajusta posición a la izquierda */
-  }
-  
-  .carousel-control-next {
-    right: 20px; /* Ajusta posición a la derecha */
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(100%); /* Invierte el color del ícono para mejor visibilidad */
-  }
-  
-  .carousel-indicators {
-    bottom: -40px; /* Ajusta la posición de los indicadores */
-  }
-  
-  .carousel-indicators li {
-    background-color: #fff; /* Color de fondo de los indicadores */
-    border: 2px solid #333; /* Borde de los indicadores */
-  }
-  
-  .carousel-indicators .active {
-    background-color: #333; /* Color de fondo activo para el indicador seleccionado */
-    border-color: #333; /* Borde activo para el indicador seleccionado */
-  }
-  
-  
-  .bodyCard {
-    width: 60%;
-    padding: 2%;
-    color: white;
-    margin: auto;
-    height: 15%;
-  }
-  
-  
 
-
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    bottom: 0;
+  .boxLeft {
     width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .footerContent {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .socialIcons {
-    margin-top: 10px;
-  }
-  
-  .socialIcons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.5s, transform 0.5s;
-  }
-  
-  .socialIcons a:hover {
-    color: #ccc;
-    transform: scale(1.2);
-  }
-  
-  p ul li {
-    list-style-type: none;
-    width: 70px;
-  }
-  
-  /* Responsive styles for different widths */
-  @media (max-width: 1200px) {
-    .footerContent {
-      padding: 0 20px;
-    }
-  
-    .socialIcons a {
-      font-size: 22px;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .socialIcons a {
-      font-size: 20px;
-      margin: 0 5px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .socialIcons a {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .socialIcons a {
-      font-size: 16px;
-    }
-  }
-  
-  
-  
-  @media (max-width: 1200px) {
-    .section {
-      width: 90%;
-      height: 100vh;
-    }
-  
-    .cards {
-      width: 90%;
-    }
-  
-    .projectCard {
-      width: 48%;
-      height: auto;
-    }
-    .boxRigth{
-        height: auto;
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-      }
-
-      .imageR {
-        background-image: url('../../assets/o.png');
-        height: 80%;
-        background-repeat: no-repeat;
-        width: 100%;
-        background-size: contain;
-        background-position: bottom;
-    }
   }
 
+  .boxRigth {
+    display: none;
+  }
 
-  
-  @media (max-width: 992px) {
-    .section {
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-    }
-  
-    .boxLeft, .boxRigth {
-      width: 50%;
-      padding-top: 5%;
+  .cards {
+    margin-top: 2%;
+  }
+}
 
-    }
-  
-    .cards {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .projectCard {
-      width: 90%;
-      margin-bottom: 20px;
-      height: auto;
-    }
+@media (max-width: 576px) {
+  .content {
+    padding-top: 1%;
+    height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .content {
-      padding-top: 2%;
-    }
-  
-    .boxLeft {
-      width: 100%;
-    }
-    .boxRigth{
-        display: none;
-    }
-  
-    .cards {
-      margin-top: 2%;
-    }
-  
-    .imageCard, .imageCard2 {
-      height: auto;
-    }
+
+  .boxLeft {
+    width: 90%;
   }
-  
-  @media (max-width: 576px) {
-    .content {
-      padding-top: 1%;
-      height: auto;
-    }
-  
-    .boxLeft{
-      width: 100%;
-    }
-    .boxRigth{
-        display: none;
-    }
-  
-    .cards {
-      margin-top: 1%;
-    }
-  
-    .imageCard, .imageCard2 {
-      height: auto;   }
+
+  .boxRigth {
+    display: none;
   }
+
+  .cards {
+    margin-top: 1%;
+  }
+
+  .cardp {
+    width: 80%;
+  }
+
+  .projectCard {
+    margin-top: 10%;
+  }
+
+  .bodyCard {
+    width: 75%;
+  }
+
+  .imageCard, .imageCard2, .imageCard3 {
+    background-position: center;
+    width: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    background-color: #fff;
+  }
+}

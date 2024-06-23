@@ -15,7 +15,7 @@ function Home() {
 <div className={style.boxLeft}>
                 <div className={style.cardBox}>
                  <div className={style.image}></div>
-                 <div className={style.cardBody}>
+                 <div className={style.cardp}>
                   <h1>Hola! soy Ludmila</h1>
                 
             <p>Me considero una entusiasta del mundo IT con una pasión por el aprendizaje continuo. He completado una variedad de cursos en tecnología y disfruto enfrentando desafíos que amplíen mis horizontes. En mi proceso de aprendizaje, he podido llevar adelante prácticas y proyectos donde pude utilizar mis conocimientos en javascript, react, css, redux, bootstrap, figma, etc.</p>
@@ -80,32 +80,38 @@ function Home() {
                   <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
                 </div>
               </div>
-              <div className={style.imageCard}></div>
+              <Link to={'https://wearfashion.vercel.app/'}> <div className={style.imageCard}></div></Link>
+             
 
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className={style.projectCard}>
-              <div className={style.imageCard2}></div>
-              <div className={style.bodyCard}>
-                <div className="card-body">
-                  <h5 className="card-title">Paws</h5>
-                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className={style.projectCard}>
-              <div className={style.imageCard3}></div>
-              <div className={style.bodyCard}>
+            <div className={style.bodyCard}>
                 <div className="card-body">
                   <h5 className="card-title">ALK Software</h5>
                   <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
                 </div>
               </div>
+              <Link to={'https://alk-software.vercel.app/'} ><div className={style.imageCard3}></div></Link>
+              
+
             </div>
           </Carousel.Item>
+          <Carousel.Item>
+            <div className={style.projectCard}>
+            <div className={style.bodyCard}>
+              <div className="card-body">
+                  <h5 className="card-title">Paws</h5>
+                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <Link to={'https://github.com/Foggynoti0n/Paws'} ><div className={style.imageCard2}></div></Link>
+            
+
+            </div>
+          </Carousel.Item>
+
         </Carousel>
       </div>
       </div>
