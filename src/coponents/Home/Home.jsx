@@ -98,19 +98,7 @@ function Home() {
 
             </div>
           </Carousel.Item>
-          <Carousel.Item>
-            <div className={style.projectCard}>
-            <div className={style.bodyCard}>
-              <div className="card-body">
-                  <h5 className="card-title">Paws</h5>
-                  <p className="card-text"><small className="text-body-light">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <Link to={'https://github.com/Foggynoti0n/Paws'} ><div className={style.imageCard2}></div></Link>
-            
-
-            </div>
-          </Carousel.Item>
+       
 
         </Carousel>
       </div>
