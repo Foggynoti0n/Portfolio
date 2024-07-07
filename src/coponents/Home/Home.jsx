@@ -66,7 +66,7 @@ function Home() {
         </div>
         <div className={style.page2}>
       <div className={style.title}>
-        <h2>Mis proyectos</h2>
+        <h2 className={style.h2}>proyectos</h2>
         <p>En cada uno de los proyectos llevados a cabo, pude pulir mis habilidades tech y aprender acerca del trabajo en equipo</p>
       </div>
       <div className={style.cards}>

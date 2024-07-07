@@ -111,8 +111,12 @@ html, body {
   color: white;
   text-align: center;
   height: 15vh;
-  margin-top: 4%;
-  border-bottom: 1px solid white
+  margin-top: 10%;
+  
+}
+.h2{
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 .imageCard,
