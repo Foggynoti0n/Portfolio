@@ -217,7 +217,8 @@ html, body {
 .footer {
   background-color: #585858;
   color: #fff;
-  padding: 20px 0;
+
+  padding: 0.5em 0;
   text-align: center;
   bottom: 0;
   margin-top: 20%;
@@ -226,12 +227,20 @@ html, body {
 }
 
 .footerContent {
-  max-width: 960px;
+height: 100%;
+
   margin: 0 auto;
 }
 
-.footer p {
-  margin: 0;
+.footer p{
+  margin: 1em;
+
+  
+}
+.footer h5{
+  margin: 1em;
+
+  
 }
 
 .socialIcons {

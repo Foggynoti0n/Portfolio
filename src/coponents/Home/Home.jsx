@@ -108,6 +108,7 @@ function Home() {
         <footer className={style.footer}>
       <div className={style.footerContent}>
         <p>© 2024 Miranda Ludmila</p>
+        <span>lurm98@gmail.com</span>
         <h5>No dudes en contactarme mediante mis redes sociales!</h5>
         <div className={style.socialIcons}>
           <a href="https://www.linkedin.com/in/ludmila-rosa-miranda/" >
@@ -126,7 +127,7 @@ function Home() {
           </a>
      
         </div>
-        <span>lurm98@gmail.com</span>
+        
       </div>
     </footer>
       </div>
