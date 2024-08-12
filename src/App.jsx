@@ -4,6 +4,7 @@ import axios from  'axios'
 import { Route, Routes, useLocation } from 'react-router-dom';
 import  Home  from './coponents/Home/Home';
 import Nav from './coponents/Nav/Nav'
+import Projects from './coponents/Projects/Projects'
 import './App.css';
 
 
@@ -23,7 +24,7 @@ function App() {
 <BrowserRouter>
 <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 </BrowserRouter>
     </>
