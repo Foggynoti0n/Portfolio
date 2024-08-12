@@ -1,7 +1,12 @@
-.page{
-    height: 220vh;
-    background-color: rgb(19, 19, 19);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+
+  overflow-x: hidden; 
 }
 
 
@@ -12,142 +17,424 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)),url('./../../assets/84248.png');
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
+    background-attachment: fixed;}
 
+.page {
+  height: calc(100vh ); 
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  display: flex;
+
+  justify-content: center; 
+  align-items: center; 
 }
-.section{
+
+.page2 {
   
-    width: 80%;
-    height: 100%;
-    display: flex;
-    margin: auto;
-    
+  height: auto;
 }
 
-.boxLeft{
-    width: 50%;
-   color: white;
-/* background-color: palevioletred; */
-   height: 100%;
- 
-}
-.boxLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.content {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)), url('./../../assets/84248.png');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  transition: background-position 0.5s;
 }
 
-.cards{
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-
+.cardp h1 {
+  font-size: 4vw;
+  margin-bottom: 5%;
 }
 
-.boxRigth{
-    width: 35%;
-    padding-top: 10%;
-    height: 100%;
-    
-}
-.imageR{
-    background-image: url('../../assets/o.png');
-    height: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
- 
- background-size: cover;
-}
-.cardBox{
-    margin: auto;
-   
+.section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-
-
-.cardButtons{
- 
-
-    text-align: center;
+.boxLeft {
+  width: 50%;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.btn{
-    background-color: rgba(198, 198, 198, 0.782);
-    
-}
-.title{
-    width: 100%;
-    color:white;
-    text-align: center;
-    height: 10vh;
-    margin-top: 4%;
-}
-.imageCard{
-    height: 40vh;
-    background-image: url('../../assets/landingW.jpeg');
-    background-color: paleturquoise;
-    background-size: cover;
-    border-radius: 5px 5px 0 0;
+.cards {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.imageCard2{
-    height: 40vh;
-    background-image: url('../../assets/landingD.jpeg');
-    background-color: paleturquoise;
-    background-size: cover;
-    border-radius: 5px 5px 0 0;
+.boxRigth {
+  width: 35%;
+  padding-top: 10%;
+  height: 100%;
 }
 
-.projectCard{
-    background-color: rgba(128, 128, 128, 0.542);
-    width: 48%;
-    border-radius: 5px;
+.imageR {
+  background-image: url('../../assets/o.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
-.bodyCard{
- width: 100%;
- padding: 2%;
- color: white;
+.cardBox {
+  margin: auto;
+  transition: transform 0.5s;
 }
 
+.cardBox:hover {
+  transform: scale(1.05);
+}
+
+.cardButtons {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(198, 198, 198, 0.782);
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(198, 198, 198, 0.9);
+  transform: scale(1.05);
+}
+
+.title {
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 15vh;
+  margin-top: 10%;
+  
+}
+.h2{
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.imageCard,
+.imageCard2,
+.imageCard3 {
+  height: 60vh;
+  width: 60%;
+  margin: auto;
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  transition: background-position 0.5s;
+  margin-bottom: 2%;
+}
+
+.imageCard {
+  background-image: url('../../assets/landingW.jpeg');
+}
+
+.imageCard2 {
+  background-image: url('../../assets/landingD.jpeg');
+}
+
+.imageCard3 {
+  background-image: url('../../assets/ALK.jpeg');
+}
+
+.projectCard {
+  
+  width: 100vw;
+  height: 80vh;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.projectCard:hover {
+  transform: scale(1.03);
+}
+
+.carouselContainer {
+  position: relative;
+  margin-top: 5%;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 0px;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+.carousel-indicators .active {
+  background-color: #333;
+  border-color: #333;
+}
+
+.bodyCard {
+  width: 60%;
+  padding: 2%;
+  color: white;
+  margin: auto;
+  height: 18%;
+}
 
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    
-    bottom: 0;
+  background-color: #585858;
+  color: #fff;
+
+  padding: 0.5em 0;
+  text-align: center;
+  bottom: 0;
+  margin-top: 20%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerContent {
+height: 100%;
+
+  margin: 0 auto;
+}
+
+.footer p{
+  margin: 1em;
+
+  
+}
+.footer h5{
+  margin: 1em;
+
+  
+}
+
+.socialIcons {
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.socialIcons a:hover {
+  color: #ccc;
+  transform: scale(1.2);
+}
+
+p ul li {
+  list-style-type: none;
+  width: 70px;
+}
+
+/* Responsive styles for different widths */
+@media (max-width: 1200px) {
+  .footerContent {
+    padding: 0 20px;
+  }
+
+  .socialIcons a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .socialIcons a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socialIcons a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .socialIcons a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    width: 90%;
+    height: 100vh;
+  }
+
+  .cards {
+    width: 90%;
+  }
+
+  .projectCard {
+    width: 48%;
+    height: auto;
+  }
+
+  .boxRigth {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+
+  .imageR {
+    background-image: url('../../assets/o.png');
+    height: 80%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 992px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .boxLeft,
+  .boxRigth {
+    width: 50%;
+    padding-top: 5%;
+  }
+
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    width: 100vw;
+    margin-bottom: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 2%;
+  }
+
+  .boxLeft {
     width: 100%;
   }
-  
-  .footerContent {
-    max-width: 960px;
-    margin: 0 auto;
+
+  .boxRigth {
+    display: none;
   }
-  
-  .footer p {
-    margin: 0;
+
+  .cards {
+    margin-top: 2%;
   }
-  
-  .socialIcons {
-    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .page{
+    height: auto;
   }
+  .page2{
+    height: 500px;
   
-  .socialIcons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
   }
-  
-  .socialIcons a:hover {
-    color: #ccc;
+  .content {
+    padding-top: 1%;
+    height: auto;
+    
   }
-  
-  p ul li{
-    list-style-type: none;
-    width: 70px;
+  .cardp h1{
+font-size: 7vw;
   }
-  
+  .cardp p{
+    font-size: 18px;
+  }
+
+  .boxLeft {
+    width: 90%;
+  }
+
+  .boxRigth {
+    display: none;
+  }
+
+  .cards {
+    margin-top: 1%;
+  }
+
+  .cardp {
+    width: 80%;
+  }
+.title{
+  width: 80%;
+  margin: auto;
+  height: 30%;
+  padding: 5%;
+}
+  .projectCard {
+    margin-top: 10%;
+   
+    height: 50%;
+  }
+
+  .bodyCard {
+    width: 75%;
+  }
+
+  .imageCard, .imageCard2, .imageCard3 {
+    background-position: center;
+    width: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    background-color: #fff;
+  }
+}
