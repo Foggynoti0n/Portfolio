@@ -358,3 +358,163 @@ ul li {
     transform: scale(1);
   }
 }
+
+
+@media (max-width: 1028px) {
+  .section {
+    width: 90%;
+  }
+
+  .boxLeft {
+    width: 100%;
+  }
+
+  .boxRigth {
+    display: none;
+  }
+
+  .imageCard,
+  .imageCard2,
+  .imageCard3 {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .projectCard {
+    width: 90%;
+    margin-top: 5em;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .presentation {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .presentation img {
+    order: 1; /* Imagen abajo */
+    margin-top: 20px;
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .iconList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .iconList ul li {
+    width: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .content {
+    padding-top: 2%;
+  }
+
+  .cardp h1 {
+    font-size: 6vw;
+  }
+
+  .title {
+    height: 10vh;
+    margin-top: 5%;
+  }
+
+  .h2 {
+    font-size: 2em;
+  }
+
+  .imageCard,
+  .imageCard2,
+  .imageCard3 {
+    height: 30vh;
+    width: 80vw;
+  }
+
+  .projectCard {
+    width: 90%;
+    margin-top: 10em;
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: 1.2em;
+   
+  }
+
+  .imageL {
+    width: 70%;
+    height: 30vh;
+  }
+
+  .presentation img {
+    order: 1; /* Imagen abajo */
+    margin-top: 10px;
+    
+    
+  }
+
+  .p1{
+    flex-direction: column;
+    
+  }
+  .p1 p{
+    width: 90%;
+  }
+  .p2 p{
+    width: 90%;
+  }
+  .p2{
+    flex-direction: column-reverse;
+  }
+}
+
+/* Computadoras grandes */
+@media (min-width: 1200px) {
+  .section {
+    width: 80%;
+  }
+
+  .boxLeft {
+    width: 50%;
+  }
+
+  .boxRigth {
+    width: 35%;
+    padding-top: 10%;
+  }
+
+  .imageCard,
+  .imageCard2,
+  .imageCard3 {
+    height: 60vh;
+    width: 50vw;
+  }
+
+  .projectCard {
+    width: 75vw;
+  }
+
+  .presentation {
+    padding: 40px;
+    flex-direction: row;
+  }
+
+  .presentation img {
+    order: 2; /* Imagen a la derecha */
+    margin-left: 20px;
+  }
+}
+
