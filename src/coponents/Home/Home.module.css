@@ -1,434 +1,360 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    overflow-x: hidden;
-  }
-  
-  .content {
-    height: 100vh;
-    padding-top: 4%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)), url('./../../assets/84248.png');
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    transition: background-position 0.5s;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .iconList{
-    display: flex;
-  }
-  
-  .page {
-    height: calc(100vh);
-    background-color: rgb(19, 19, 19);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .page2 {
-    height: auto;
-  }
-  
-  .cardp h1 {
-    font-size: 4vw;
-    margin-bottom: 5%;
-  }
-  
-  .section {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-  }
-  
-  .boxLeft {
-    width: 50%;
-    color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .cards {
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .boxRigth {
-    width: 35%;
-    padding-top: 10%;
-    height: 100%;
-  }
-  
-  .imageR {
-    background-image: url('../../assets/o.png');
-    height: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-  }
-  
-  .cardBox {
-    margin: auto;
-    transition: transform 0.5s;
-  }
-  
-  .cardBox:hover {
-    transform: scale(1.05);
-  }
-  
-  .cardButtons {
-    text-align: center;
-  }
-  
-  .btn {
-    background-color: rgba(198, 198, 198, 0.782);
-    transition: background-color 0.5s, transform 0.5s;
-  }
-  
-  .btn:hover {
-    background-color: rgba(198, 198, 198, 0.9);
-    transform: scale(1.05);
-  }
-  
-  .title {
-    width: 100%;
-    color: white;
-    text-align: center;
-    height: 15vh;
-    margin-top: 10%;
-  }
-  
-  .h2 {
-    font-size: 3em;
-    text-transform: uppercase;
-  }
-  
-  .imageCard,
-  .imageCard2,
-  .imageCard3 {
-    height: 60vh;
-    width: 60%;
-    margin: auto;
-    background-size: cover;
-    border-radius: 5px 5px 0 0;
-    transition: background-position 0.5s;
-    margin-bottom: 2%;
-  }
-  
-  .imageCard {
-    background-image: url('../../assets/landingW.jpeg');
-  }
-  
-  .imageCard2 {
-    background-image: url('../../assets/landingD.jpeg');
-  }
-  
-  .imageCard3 {
-    background-image: url('../../assets/ALK.jpeg');
-  }
-  
-  .projectCard {
-    width: 100vw;
-    height: 80vh;
-    border-radius: 5px;
-    transition: transform 0.5s;
-    margin: auto;
-    padding-bottom: 5%;
-  }
-  
-  .projectCard:hover {
-    transform: scale(1.03);
-  }
-  
-  .carouselContainer {
-    position: relative;
-    margin-top: 5%;
-  }
-  
-  .carousel {
-    margin-bottom: 20px;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 0px;
-    z-index: 10;
-  }
-  
-  .carousel-control-prev {
-    left: 20px;
-  }
-  
-  .carousel-control-next {
-    right: 20px;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(100%);
-  }
-  
-  .carousel-indicators {
-    bottom: -40px;
-  }
-  
-  .carousel-indicators li {
-    background-color: #fff;
-    border: 2px solid #333;
-  }
-  
-  .carousel-indicators .active {
-    background-color: #333;
-    border-color: #333;
-  }
-  
-  .bodyCard {
-    width: 60%;
-    padding: 2%;
-    color: white;
-    margin: auto;
-    height: 18%;
-  }
-  
-  .footer {
-    background-color: #585858;
-    color: #fff;
-    padding: 0.5em 0;
-    text-align: center;
-    bottom: 0;
-    margin-top: 20%;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .footerContent {
-    height: 100%;
-    margin: 0 auto;
-  }
-  
-  .footer p {
-    margin: 1em;
-  }
-  
-  .footer h5 {
-    margin: 1em;
-  }
-  
-  .socialIcons {
-    margin-top: 10px;
-  }
-  
-  .socialIcons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.5s, transform 0.5s;
-  }
-  
-  .socialIcons a:hover {
-    color: #ccc;
-    transform: scale(1.2);
-  }
-  
-  p ul li {
-    list-style-type: none;
-    width: 70px;
-  }
-  
-  /* Responsive styles for different widths */
-  @media (max-width: 1200px) {
-    .footerContent {
-      padding: 0 20px;
-    }
-  
-    .socialIcons a {
-      font-size: 22px;
-    }
-  
-    .section {
-      width: 90%;
-      height: 100vh;
-    }
-  
-    .cards {
-      width: 100%;
-    }
-  
-    .projectCard {
-      width: 90vw;
-      height: auto;
-    }
-  
-    .boxRigth {
-      height: auto;
-      margin: 0;
-      padding: 0;
-      background-size: cover;
-    }
-  
-    .imageR {
-      background-image: url('../../assets/o.png');
-      height: 80%;
-      background-repeat: no-repeat;
-      width: 100%;
-      background-size: contain;
-      background-position: bottom;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .socialIcons a {
-      font-size: 20px;
-      margin: 0 5px;
-    }
-  
-    .section {
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-    }
-  
-    .boxLeft,
-    .boxRigth {
-      width: 50%;
-      padding-top: 5%;
-    }
-  
-    .cards {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .projectCard {
-      width: 100vw;
-      margin-bottom: 20px;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .content {
-      height: 120vh; /* 85% de la pantalla en vistas medianas */
-      padding-top: 2%;
-    }
-  
-    .boxLeft {
-      width: 100%;
-    }
-  
-    .boxRigth {
-      display: none;
-    }
-  
-    .cards {
-      margin-top: 2%;
-    }
-  
-    .socialIcons a {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .page {
-      height: auto;
-    }
-  
-    .page2 {
-      height: 500px;
-    }
-  
-    .content {
-      height: 120vh; 
-      padding-top: 3%;
-      width: 100%;
-    
-    }
+html, body {
+  overflow-x: hidden;
+  background-color: rgb(19, 19, 19);
+}
 
-    .boxLeft p{
-     width: 80vw;
-     
-    }
+.content {
+  height: 100vh;
+  padding-top: 4%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0)), url('./../../assets/84248.png');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  transition: background-position 0.5s;
+}
 
-    .iconList{
-        flex-wrap: wrap;
-        
-    }
-  
-    .cardp h1 {
-      font-size: 7vw;
-    }
-  
-    .cardp p {
-      font-size: 18px;
-    }
-  
-    .boxLeft {
-      width: 90%;
-    }
-  
-    .boxRigth {
-      display: none;
-    }
-  
-    .cards {
-      margin-top: 1%;
-    }
-  
-    .cardp {
-      width: 80%;
-    }
-  
-    .title {
-      width: 80%;
-      margin: auto;
-      height: 30%;
-      padding: 5%;
-    }
-  
-    .projectCard {
-      margin-top: 10%;
-      height: 50%;
-    }
-  
-    .bodyCard {
-      width: 75%;
-    }
-  
-    .imageCard,
-    .imageCard2,
-    .imageCard3 {
-      background-position: center;
-      width: 75%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 20vh;
-      background-color: #fff;
-    }
-  
-    .socialIcons a {
-      font-size: 16px;
-    }
+.page {
+  height: 100vh;
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page2 {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(19, 19, 19);
+}
+
+.cardp h1 {
+  font-size: 4vw;
+  margin-bottom: 5%;
+}
+
+.section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.boxLeft {
+  width: 50%;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxRigth {
+  width: 35%;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.imageR {
+  background-image: url('../../assets/o.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.cardBox {
+  margin: auto;
+  transition: transform 0.5s;
+  font-size: 1.5em;
+}
+
+.cardBox:hover {
+  transform: scale(1.05);
+}
+
+.cardButtons {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgba(198, 198, 198, 0.782);
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(198, 198, 198, 0.9);
+  transform: scale(1.05);
+}
+
+.title {
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 15vh;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  background-color: rgb(19, 19, 19);
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: fadeInUp 1s 0.5s forwards;
+}
+
+.h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.imageCard,
+.imageCard2,
+.imageCard3 {
+  height: 60vh;
+  width: 50vw;
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  transition: background-position 0.5s;
+  margin-bottom: 2%;
+  background-position: center;
+}
+
+.imageCard {
+  background-image: url('../../assets/landingW.jpeg');
+}
+
+.imageCard2 {
+  background-image: url('../../assets/landingD.jpeg');
+}
+
+.imageCard3 {
+  background-image: url('../../assets/ALK.jpeg');
+}
+
+.footer {
+  background-color: #585858;
+  color: #fff;
+  padding: 0.5em 0;
+  text-align: center;
+  bottom: 0;
+  margin-top: 20%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerContent {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 1em;
+}
+
+.footer h5 {
+  margin: 1em;
+}
+
+.socialIcons {
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.socialIcons a:hover {
+  color: #ccc;
+  transform: scale(1.2);
+}
+
+.iconList {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  width: 70px;
+}
+
+.projectCard {
+  width: 75vw;
+ margin-top: 8em;
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.info {
+  text-align: center;
+  width: 30%;
+  padding: 2%;
+}
+
+.info p {
+  margin-top: 2em;
+}
+
+.projectCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projeCtard h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 1rem;
+  background-color: rgb(19, 19, 19);
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#313131, rgb(19, 19, 19));
+  color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.p1, .p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.p1 p, .p2 p{
+  width: 50%;
+}
+
+.p1::before, .p2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease;
+  z-index: -1;
+}
+
+.p1:hover, .p2:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+
+.p1:hover::before, .p2:hover::before {
+  backdrop-filter: blur(10px);
+}
+
+.description {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: fadeInUp 1s 1s forwards;
+}
+
+.imageL {
+  width: 50%;
+  height: 40vh;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  background: url('../../assets/72-721184_anime-black-and-white-fotor-bg-remover-20240421183228.png') no-repeat center center;
+  background-size: cover;
+  animation: scaleUp 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.imageL:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

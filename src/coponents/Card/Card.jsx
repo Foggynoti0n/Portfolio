@@ -1,25 +1,20 @@
-// Card.js
-
+// ProjectCard.js
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import style from './Card.module.css'
-import React, { useEffect } from 'react';
 
-const Card = ({name, images}) => {
-console.log(name, images);
+
+function Card({ children }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
-   <div className={style.card}>
-     <div className="card-container">
-      
-        <div key={name} className="card">
-          <img src={images[0]} alt={name} className={style.cardImage} />
-          <div className="card-content">
-            <h2 className="card-title">{name}</h2>
-            <button >Learn more</button>
-          </div>
-        </div>    </div>
-   </div>
+    <div ref={ref} className={`${style.projectCard} ${inView ? 'inView' : ''}`}>
+      {children}
+    </div>
   );
-};
+}
 
 export default Card;
-
