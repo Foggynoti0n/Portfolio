@@ -49,8 +49,8 @@ const Portfolio = () => {
     <div className="portfolio min-h-screen py-20 px-8" id="portfolio"  data-aos="fade-up" >
       <div className="container mx-auto text-center">
         <div className="section-header mb-16">
-          <p className="text-xl text-gray-400 mb-2">My Portfolio</p>
-          <h2 className="text-5xl font-bold text-white">Featured Projects</h2>
+          <p className="text-xl text-gray-400 mb-2">Mi Portfolio</p>
+          <h2 className="text-5xl font-bold text-white">últimos proyectos</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project 1 */}
