@@ -21,11 +21,16 @@
 
 
   }
-  .page2{
-    
-    
-  
-  }
+
+
+#about {
+  overflow-x: hidden; /* Evita el scroll horizontal en el contenedor principal */
+}
+
+.page1, .page2 {
+  overflow-x: hidden; /* Asegura que no haya scroll horizontal en estas secciones */
+}
+
   .separator {
     background-color: #444;
     width: 50%;
@@ -68,3 +73,14 @@
     opacity: 0.9;
   }
   
+  /* about.css */
+
+@media (max-width: 768px) {
+  .about-section .about, .about-section2 .about2 {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo en pantallas pequeñas */
+  }
+  .infoA {
+    width: 100%; /* Asegura que los textos ocupen el ancho completo en pantallas pequeñas */
+    padding: 1rem; /* Añade un padding adecuado para mantener el espaciado */
+  }
+}

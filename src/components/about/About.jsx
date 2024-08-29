@@ -6,10 +6,12 @@ import './about.css'; // Asegúrate de tener tus estilos en este archivo
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Duración rápida para animaciones
-      once: false,     // Animaciones ocurren solo una vez
+      duration: 2000,
+      once: false, // Cambia a true para que la animación ocurra una sola vez y no cause scroll innecesario
+      offset: 200, // Ajusta el offset para asegurar que los elementos no se muevan fuera del viewport
     });
   }, []);
+  
 
   return (
     
@@ -25,18 +27,17 @@ const About = () => {
       </div>
   </div>
 
-  <div className=" about-section2 w-full page2 h-screen flex items-center justify-start  text-white">
-
-      <div className="w-1/2 infoA h-full flex flex-col pl-24 justify-center items-center w-1/2">
-        <p className="text-xl mb-5" data-aos="fade-up">
-          En mi proceso de aprendizaje, he podido llevar adelante prácticas y proyectos donde pude utilizar mis conocimientos en JavaScript, React, CSS, Redux, Bootstrap, Figma, etc.
-        </p>
-        <p className="text-xl mt-5" data-aos="fade-up" data-aos-delay="300">
-          Considero que mis soft skills principales son: creatividad, comunicación eficaz, trabajo en equipo, escucha activa, responsabilidad y resiliencia.
-        </p>
-      </div>
-      <div className="about2 w-1/2 h-full bg-contain bg-center" data-aos="fade-left"></div>
-    </div>
+  <div className="about-section2 w-full page2 h-screen flex items-center justify-start text-white overflow-hidden">
+  <div className="infoA h-full flex flex-col pl-24 justify-center items-center w-1/2">
+    <p className="text-xl mb-5" data-aos="fade-up">
+      En mi proceso de aprendizaje, he podido llevar adelante prácticas y proyectos donde pude utilizar mis conocimientos en JavaScript, React, CSS, Redux, Bootstrap, Figma, etc.
+    </p>
+    <p className="text-xl mt-5" data-aos="fade-up" data-aos-delay="300">
+      Considero que mis soft skills principales son: creatividad, comunicación eficaz, trabajo en equipo, escucha activa, responsabilidad y resiliencia.
+    </p>
+  </div>
+  <div className="about2 w-1/2 h-full bg-contain bg-center" data-aos="fade-left"></div>
+</div>
 
 
     </div>
