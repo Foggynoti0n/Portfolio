@@ -66,11 +66,7 @@ const About = () => {
     </div>
     </div>
     
-
-  </div>
-
-  {/* Título de Habilidades Blandas */}
-  <h3 className="text-2xl font-bold mb-4" data-aos="fade-up" >
+    <h3 className="text-2xl font-bold mb-4 mt-8" data-aos="fade-up" data-aos-delay="500">
     Habilidades Blandas
   </h3>
 
@@ -80,33 +76,37 @@ const About = () => {
     <div className="flex justify-center space-x-4 mb-4">
       <div className="flex flex-col items-center">
         <i className="fas fa-lightbulb text-4xl" data-aos="fade-up" data-aos-delay="520"></i>
-        <p className="text-sm mt-2">Creatividad</p>
+        <p className="text-sm mt-2" data-aos="fade-up">Creatividad</p>
       </div>
       <div className="flex flex-col items-center">
         <i className="fas fa-comments text-4xl" data-aos="fade-up" data-aos-delay="530"></i>
-        <p className="text-sm mt-2">Comunicación</p>
+        <p className="text-sm mt-2" data-aos="fade-up" >Comunicación</p>
       </div>
       <div className="flex flex-col items-center">
         <i className="fas fa-users text-4xl" data-aos="fade-up" data-aos-delay="540"></i>
-        <p className="text-sm mt-2">Trabajo en equipo</p>
+        <p className="text-sm mt-2" data-aos="fade-up">Trabajo en equipo</p>
       </div>
       <div className="flex justify-center space-x-4">
       <div className="flex flex-col items-center">
         <i className="fas fa-ear-listen text-4xl" data-aos="fade-up" data-aos-delay="550"></i>
-        <p className="text-sm mt-2">Escucha activa</p>
+        <p className="text-sm mt-2" data-aos="fade-up" >Escucha activa</p>
       </div>
       <div className="flex flex-col items-center">
         <i className="fas fa-handshake text-4xl" data-aos="fade-up" data-aos-delay="560"></i>
-        <p className="text-sm mt-2">Responsabilidad</p>
+        <p className="text-sm mt-2" data-aos="fade-up" >Responsabilidad</p>
       </div>
       <div className="flex flex-col items-center">
         <i className="fas fa-heart text-4xl" data-aos="fade-up" data-aos-delay="570"></i>
-        <p className="text-sm mt-2">Resiliencia</p>
+        <p className="text-sm mt-2" data-aos="fade-up" >Resiliencia</p>
       </div>
     </div>
     </div>
 
   </div>
+  </div>
+
+  {/* Título de Habilidades Blandas */}
+
 </div>
 
 
