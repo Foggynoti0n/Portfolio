@@ -6,7 +6,7 @@ import './about.css'; // Asegúrate de tener tus estilos en este archivo
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       once: false, // Cambia a true para que la animación ocurra una sola vez y no cause scroll innecesario
       offset: 200, // Ajusta el offset para asegurar que los elementos no se muevan fuera del viewport
     });
@@ -29,13 +29,92 @@ const About = () => {
 
   <div className="about-section2 w-full page2 h-screen flex items-center justify-start text-white overflow-hidden">
   <div className="infoA h-full flex flex-col pl-24 justify-center items-center w-1/2">
-    <p className="text-xl mb-5" data-aos="fade-up">
-      En mi proceso de aprendizaje, he podido llevar adelante prácticas y proyectos donde pude utilizar mis conocimientos en JavaScript, React, CSS, Redux, Bootstrap, Figma, etc.
-    </p>
-    <p className="text-xl mt-5" data-aos="fade-up" data-aos-delay="300">
-      Considero que mis soft skills principales son: creatividad, comunicación eficaz, trabajo en equipo, escucha activa, responsabilidad y resiliencia.
-    </p>
+  {/* Título de Tecnologías */}
+  <h3 className="text-2xl font-bold mb-4" data-aos="fade-up">
+    Tecnologías
+  </h3>
+  
+  {/* Contenedor de Tecnologías */}
+  <div className="flex flex-col justify-start items-center w-full mb-8">
+    {/* Primera fila de tecnologías */}
+    <div className="flex justify-center space-x-4 mb-4">
+      <div className="flex flex-col items-center">
+        <i className="fab fa-js text-4xl" data-aos="fade-up"></i>
+        <p className="text-sm mt-2">JavaScript</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fab fa-react text-4xl" data-aos="fade-up" data-aos-delay="100"></i>
+        <p className="text-sm mt-2">React</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fab fa-css3-alt text-4xl" data-aos="fade-up" data-aos-delay="200"></i>
+        <p className="text-sm mt-2">CSS</p>
+      </div>
+      <div className="flex justify-center space-x-4">
+      <div className="flex flex-col items-center">
+      <i className="fas fa-database text-4xl" data-aos="fade-up" data-aos-delay="300"></i>
+      <p className="text-sm mt-2">Redux</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fab fa-bootstrap text-4xl" data-aos="fade-up" data-aos-delay="400"></i>
+        <p className="text-sm mt-2">Bootstrap</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fab fa-figma text-4xl" data-aos="fade-up" data-aos-delay="500"></i>
+        <p className="text-sm mt-2">Figma</p>
+      </div>
+    </div>
+    </div>
+    
+
   </div>
+
+  {/* Título de Habilidades Blandas */}
+  <h3 className="text-2xl font-bold mb-4" data-aos="fade-up" >
+    Habilidades Blandas
+  </h3>
+
+
+  <div className="flex flex-col justify-start items-center w-full">
+    
+    <div className="flex justify-center space-x-4 mb-4">
+      <div className="flex flex-col items-center">
+        <i className="fas fa-lightbulb text-4xl" data-aos="fade-up" data-aos-delay="520"></i>
+        <p className="text-sm mt-2">Creatividad</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fas fa-comments text-4xl" data-aos="fade-up" data-aos-delay="530"></i>
+        <p className="text-sm mt-2">Comunicación</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fas fa-users text-4xl" data-aos="fade-up" data-aos-delay="540"></i>
+        <p className="text-sm mt-2">Trabajo en equipo</p>
+      </div>
+      <div className="flex justify-center space-x-4">
+      <div className="flex flex-col items-center">
+        <i className="fas fa-ear-listen text-4xl" data-aos="fade-up" data-aos-delay="550"></i>
+        <p className="text-sm mt-2">Escucha activa</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fas fa-handshake text-4xl" data-aos="fade-up" data-aos-delay="560"></i>
+        <p className="text-sm mt-2">Responsabilidad</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <i className="fas fa-heart text-4xl" data-aos="fade-up" data-aos-delay="570"></i>
+        <p className="text-sm mt-2">Resiliencia</p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
   <div className="about2 w-1/2 h-full bg-contain bg-center" data-aos="fade-left"></div>
 </div>
 

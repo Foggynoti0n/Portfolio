@@ -4,3 +4,20 @@ footer{
     height: 50vh;
     border-top: 1px solid rgb(83, 83, 83);
 }
+/* footer.css */
+
+  
+  footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  footer a {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  footer a:hover {
+    transform: scale(1.2);
+  }
+  
