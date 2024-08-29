@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div className="contact min-h-screen flex flex-col items-center justify-center bg-[#181818] p-8" id="contact">
-      <span className='text-gray-100 text-xl'>Puedes contactarme a por medio del siguiente formulario</span>
+      <span className='text-gray-100 text-xl'>Puedes contactarme por medio del siguiente formulario</span>
       <div className="contact-form w-full max-w-4xl bg-gray-800 p-8 mt-10 rounded-lg shadow-lg">
         <form name="contactForm" id="contactForm" onSubmit={handleSubmit}>
           <div className="control-group mb-4">
