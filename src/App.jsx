@@ -1,34 +1,31 @@
-import React, { useEffect, useState  } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import axios from  'axios'
-import { Route, Routes, useLocation } from 'react-router-dom';
-import  Home  from './coponents/Home/Home';
-import Nav from './coponents/Nav/Nav'
-import Projects from './coponents/Projects/Projects'
-import './App.css';
+import React from 'react';
+import Navbar from './components/nav/Navbar'
+import Hero from './components/hero/Hero';
+import Service from './components/services/Service';
+import Portfolio from './components/portfolio/Portfolio';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
+import About from './components/about/About';
+import './styles/tailwind.css';
+import './styles/tailwind.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa el CSS de AOS
 
 
-
-
-
-function App() {
-  const [shouldShowNavbar, setShouldShowNavbar] = useState(true); 
-
-
-
-
+const App = () => {
   return (
-    <>
-
-    {/* <Nav/> */}
-<BrowserRouter>
-<Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-</BrowserRouter>
-    </>
+    <div className='main'>
+      <Navbar />
+      <Hero />
+      <About />
+      <Service />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
+

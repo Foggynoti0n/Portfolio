@@ -1,16 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import store from './redux/store.js'
-import { Provider } from 'react-redux'
+import './styles/tailwind.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa el CSS de AOS
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+AOS.init();
 
- <Provider store={store}>
-    <React.StrictMode>
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
- </Provider>
-
+  </StrictMode>,
 )

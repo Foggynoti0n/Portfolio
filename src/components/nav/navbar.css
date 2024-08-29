@@ -1,0 +1,48 @@
+/* navbar.css */
+
+/* Estilo del navbar */
+nav{
+  border-bottom: 1px solid gray;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    background: rgba(0, 0, 0, 0); /* Fondo negro con transparencia */
+    padding: 20px 60px; /* Espaciado inicial */
+  }
+  
+  /* Ajuste del navbar al hacer scroll */
+  .navbar.nav-sticky {
+    background-color: #000000a2; /* Cambiar el color de fondo */
+    padding: 10px ; /* Reducir el padding al hacer scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Añadir sombra */
+    animation: fadeIn 0.5s ease-in-out; /* Animación de fade-in */
+    height: 5vh;
+    border: none;
+  }
+  
+  /* Transiciones para los enlaces */
+  .navbar .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #EF233C; /* Color al hacer hover */
+  }
+  
+  /* Keyframes para animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

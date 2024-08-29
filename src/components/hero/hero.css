@@ -1,0 +1,31 @@
+/* hero.css */
+#home{
+  background-image: url('../../assets/headerBg.png') !important;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: top;
+background-attachment: fixed;
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+  .principal{
+    border-left: 1px solid gray;
+  }
+  .hero-text {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

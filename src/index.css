@@ -1,155 +1,135 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(19, 19, 19);
+body {
+  color: #797979;
+  background: #010101;
+  font-family: "Raleway", sans-serif;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+  color: #414141;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #535bf2;
+  color: #313131;
+  transition: .3s;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+a:hover,
+a:active,
+a:focus {
+  color: #EF233C;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  max-width: 1366px;
+}
+
+
+
+.btn {
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #150722;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 50px #150722;
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+}
+
+.btn:hover {
+  color: #1b0231;
+  background: transparent;
+  box-shadow: inset 0 0 0 0 #280149;
+  border-color: #1b0231;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-box-sizing: border-box;
-  background-color: rgb(19, 19, 19);
+  background: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+  -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+  transition: opacity .3s ease-out, visibility 0s linear .3s;
+  z-index: 999;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  animation: fadeIn 1s ease-in-out;
+#loader.show {
+  -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  transition: opacity .6s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s, transform 0.2s ease-in-out;
-}
-button:hover {
-  border-color: #646cff;
-  transform: scale(1.05);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#loader .loader {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: 5px solid #dddddd;
+  border-top: 5px solid #EF233C;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
-/* Responsive Typography */
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 2.8em;
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2.4em;
-  }
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px 0;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  button {
-    padding: 0.5em 1em;
-    font-size: 0.9em;
-  }
+.back-to-top i {
+  color: #ffffff;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  button {
-    padding: 0.4em 0.8em;
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.6em;
-  }
-
-  button {
-    padding: 0.4em 0.8em;
-    font-size: 0.8em;
-  }
-}
-
-/* Orientation Specific */
-@media (orientation: landscape) {
-  h1 {
-    font-size: 2.2em;
-  }
-
-  button {
-    padding: 0.5em 1em;
-    font-size: 0.9em;
-  }
-}
-
-@media (orientation: portrait) {
-  h1 {
-    font-size: 2.6em;
-  }
-
-  button {
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.back-to-top:hover i {
+  color: #414141;
 }
 
