@@ -23,8 +23,8 @@ const Hero = () => {
     <div className="relative w-90% h-screen flex flex-col items-center justify-center bg-cover overflow-hidden" id="home">
       <div className="mt-12 md:mt-24 px-4 md:px-0" data-aos="fade-up">
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <p className="text-gray-300 text-2xl md:text-3xl font-semibold">Soy</p>
-          <h1 className="text-gray-200 text-5xl md:text-9xl tracking-wide mb-4">LUDMILA MIRANDA</h1>
+          <p className="text-gray-300 text-2xl mb-5 md:text-3xl font-semibold">Soy</p>
+          <h1 className="text-gray-200 text-5xl font-semibold md:text-9xl tracking-wide mb-4">LUDMILA MIRANDA</h1>
           <h2 className="text-gray-300 text-xl md:text-3xl font-semibold mb-4">Front-end Developer</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start mt-8">
             {/* Botón de descarga del CV */}
