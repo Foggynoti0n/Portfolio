@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './navbar.css';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Para usar los iconos de menú y cerrar
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
-
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar si el menú está abierto
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,16 +21,87 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${sticky ? 'nav-sticky' : ''}`}>
-      <div className="container mx-auto flex  items-center justify-evenly">
+    <nav
+      className={`navbar fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        sticky
+          ? 'bg-black/70 py-2 shadow-md'
+          : 'bg-transparent border-b border-gray-500 py-5'
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between px-4">
+        {/* Logo */}
+        <div className="text-white text-2xl font-bold">LM</div>
 
+        {/* Menu hamburguesa en móviles */}
+        <div className="lg:hidden">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-white focus:outline-none mr-5"
+          >
+            {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+          </button>
+        </div>
 
-        <div className="hidden lg:flex lg:items-center gap-4 text-white lg:justify-between lg:space-x-6" id="navbarCollapse">
-          <a href="#home" className="nav-link  text-white">Inicio</a>
-          <a href="#about" className="nav-link text-white">Sobre mi</a>
-          <a href="#portfolio" className="nav-link text-white">Portfolio</a>
-          <a href="#contact" className="nav-link text-white">Contact</a>
-          <a href="#footer" className="nav-link text-white">Social media</a>
+        {/* Enlaces en pantallas grandes */}
+        <div className="hidden lg:flex lg:items-center gap-4 text-white">
+          <a href="#home" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+            Inicio
+          </a>
+          <a href="#about" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+            Sobre mí
+          </a>
+          <a href="#portfolio" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+            Portfolio
+          </a>
+          <a href="#contact" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+            Contact
+          </a>
+          <a href="#footer" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+            Social Media
+          </a>
+        </div>
+
+        {/* Menú desplegable en móviles */}
+        <div
+          className={`${
+            menuOpen ? 'flex' : 'hidden'
+          } flex-col items-center h-screen lg:hidden absolute top-16 left-0 w-full bg-black  py-4`}
+        >
+          <a
+            href="#home"
+            className="nav-link text-white text-xl py-3 transition-colors duration-300 hover:text-[#EF233C]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Inicio
+          </a>
+          <a
+            href="#about"
+            className="nav-link text-white  text-xl py-3 transition-colors duration-300 hover:text-[#EF233C]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sobre mí
+          </a>
+          <a
+            href="#portfolio"
+            className="nav-link text-white  text-xl py-3 transition-colors duration-300 hover:text-[#EF233C]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Portfolio
+          </a>
+          <a
+            href="#contact"
+            className="nav-link text-white  text-xl py-3 transition-colors duration-300 hover:text-[#EF233C]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contacto
+          </a>
+          <a
+            href="#footer"
+            className="nav-link text-white  text-xl py-3 transition-colors duration-300 hover:text-[#EF233C]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Redes sociales
+          </a>
         </div>
       </div>
     </nav>

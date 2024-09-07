@@ -46,7 +46,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="portfolio min-h-screen py-20 px-8" id="portfolio"  data-aos="fade-up" >
+    <div className="portfolio h-auto py-20 px-8" id="portfolio"  data-aos="fade-up" >
       <div className="container mx-auto text-center">
         <div className="section-header mb-16">
           <p className="text-xl text-gray-400 mb-2">Mi Portfolio</p>
