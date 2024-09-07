@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4">
         {/* Logo */}
-        <div className="text-white text-2xl font-bold">LM</div>
+        <div className="text-white lg:hidden text-2xl font-bold">LM</div>
 
         {/* Menu hamburguesa en móviles */}
         <div className="lg:hidden">
@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Enlaces en pantallas grandes */}
-        <div className="hidden lg:flex lg:items-center gap-4 text-white">
+        <div className="hidden lg:flex lg:items-center  gap-10 mx-auto text-white">
           <a href="#home" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
             Inicio
           </a>
