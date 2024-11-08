@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './portfolio.css';
 import ALK from '../../assets/ALK.jpeg';
 import wearfashion from '../../assets/landingW.jpeg';
+import hHeader from '../../assets/habitaHeader.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -66,6 +67,13 @@ const Portfolio = () => {
             <img className="w-full h-64 object-cover transition-transform transform hover:scale-110" src={ALK} alt="Project 2" />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-60">
               <a className="text-white text-lg font-bold px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 transition-colors" href="https://alk-software.vercel.app/" data-lightbox="portfolio">View Project</a>
+            </div>
+          </div>
+
+          <div className="portfolio-item relative overflow-hidden rounded-lg transition-transform transform bg-gray-900 hover:bg-gray-800">
+            <img className="w-full h-64 object-cover transition-transform transform hover:scale-110" src={hHeader} alt="Project 2" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-60">
+              <a className="text-white text-lg font-bold px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 transition-colors" href="https://github.com/Foggynoti0n/Habita" data-lightbox="portfolio">View Project</a>
             </div>
           </div>
         </div>
