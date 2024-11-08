@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./portfolio.css";
 import ALK from "../../assets/ALK.jpeg";
 import wearfashion from "../../assets/landingW.jpeg";
@@ -7,7 +7,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Portfolio = () => {
-  const [itemsInView, setItemsInView] = useState([]);
   useEffect(() => {
     AOS.init({
       duration: 2000, // Duración de la animación en milisegundos
@@ -18,7 +17,6 @@ const Portfolio = () => {
   useEffect(() => {
     const handleScroll = () => {
       const items = document.querySelectorAll(".portfolio-item");
-      const newItemsInView = [];
 
       items.forEach((item) => {
         const rect = item.getBoundingClientRect();
@@ -28,16 +26,11 @@ const Portfolio = () => {
           rect.bottom <=
             (window.innerHeight || document.documentElement.clientHeight)
         ) {
-          newItemsInView.push(item);
-          // Add animation class when in view
           item.classList.add("animate");
         } else {
-          // Remove animation class when out of view
           item.classList.remove("animate");
         }
       });
-
-      setItemsInView(newItemsInView);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -98,11 +91,12 @@ const Portfolio = () => {
             </div>
           </div>
 
+          {/* Project 3 */}
           <div className="portfolio-item relative overflow-hidden rounded-lg transition-transform transform bg-gray-900 hover:bg-gray-800">
             <img
               className="w-full h-64 object-cover transition-transform transform hover:scale-110"
               src={hHeader}
-              alt="Project 2"
+              alt="Project 3"
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-60">
               <a
