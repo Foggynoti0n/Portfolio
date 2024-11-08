@@ -9,7 +9,6 @@
   }
 }
 
-
 /* #banner{
   background-image: url('../../assets/15.png');
   background-position: top;
@@ -29,19 +28,17 @@
   }
 }
 
-.imagen1{
-  background-image: url('../../assets/pngegg.png');
+.imagen1 {
+  background-image: url("../../assets/pngegg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
-.imagen2{
-  background-image: url('../../assets/pngegg1.png');
+.imagen2 {
+  background-image: url("../../assets/pngegg1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  
-  
 }
 
 .wow.zoomIn {
@@ -50,12 +47,11 @@
 
 .wow.fadeInUp {
   animation: fadeInUp 2s ease-out;
- 
 }
 
-.service-card{
-margin-top: 5em;
-border-radius: 10px;
+.service-card {
+  margin-top: 5em;
+  border-radius: 10px;
 }
 
 .group-hover\:shadow-xl:hover {
@@ -65,15 +61,19 @@ border-radius: 10px;
 .group-hover\:scale-105:hover {
   transform: scale(1.05); /* Escalado al hacer hover */
 }
-#total{
+#total {
   padding-top: 10%;
 }
 #service {
   height: 170vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(-48deg, rgba(0,0,0,1) 50%, rgba(7,2,11,1) 75%, rgba(21,7,34,1) 88%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    -48deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(7, 2, 11, 1) 75%,
+    rgba(21, 7, 34, 1) 88%
+  );
 
- 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

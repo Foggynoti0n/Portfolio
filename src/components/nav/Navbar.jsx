@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Para usar los iconos de menú y cerrar
+import { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // Para usar los iconos de menú y cerrar
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -14,9 +14,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -24,8 +24,8 @@ const Navbar = () => {
     <nav
       className={`navbar fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         sticky
-          ? 'bg-black/70 py-2 shadow-md'
-          : 'bg-transparent border-b border-gray-500 py-5'
+          ? "bg-black/70 py-2 shadow-md"
+          : "bg-transparent border-b border-gray-500 py-5"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
@@ -44,19 +44,34 @@ const Navbar = () => {
 
         {/* Enlaces en pantallas grandes */}
         <div className="hidden lg:flex lg:items-center  gap-10 mx-auto text-white">
-          <a href="#home" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+          <a
+            href="#home"
+            className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]"
+          >
             Inicio
           </a>
-          <a href="#about" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+          <a
+            href="#about"
+            className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]"
+          >
             Sobre mí
           </a>
-          <a href="#portfolio" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+          <a
+            href="#portfolio"
+            className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]"
+          >
             Portfolio
           </a>
-          <a href="#contact" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+          <a
+            href="#contact"
+            className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]"
+          >
             Contact
           </a>
-          <a href="#footer" className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]">
+          <a
+            href="#footer"
+            className="nav-link text-white transition-colors duration-300 hover:text-[#EF233C]"
+          >
             Social Media
           </a>
         </div>
@@ -64,7 +79,7 @@ const Navbar = () => {
         {/* Menú desplegable en móviles */}
         <div
           className={`${
-            menuOpen ? 'flex' : 'hidden'
+            menuOpen ? "flex" : "hidden"
           } flex-col items-center h-screen lg:hidden absolute top-16 left-0 w-full bg-black  py-4`}
         >
           <a

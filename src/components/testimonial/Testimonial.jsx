@@ -1,5 +1,4 @@
-import React from 'react';
-import './testimonial.css'
+import "./testimonial.css";
 const Testimonial = () => {
   return (
     <div className="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
@@ -14,7 +13,9 @@ const Testimonial = () => {
             </div>
             <div className="testimonial-text">
               <p>
-                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums
+                lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum
+                dolor sit amet consec adipis elit.
               </p>
               <h3>Customer Name</h3>
               <h4>Profession</h4>
